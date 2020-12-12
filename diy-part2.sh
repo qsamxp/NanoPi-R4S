@@ -12,8 +12,6 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
-pwd
-ls -la .
-ls -la ../
-ls -la ../../
-cp ../../patches/200-rockchip-add-support-for-NanoPi-R4S.patch.new target/linux/rockchip/patches-5.4/200-rockchip-add-support-for-NanoPi-R4S.patch
+
+echo $(GITHUB_WORKSPACE)
+cp $GITHUB_WORKSPACE/patches/200-rockchip-add-support-for-NanoPi-R4S.patch.new target/linux/rockchip/patches-5.4/200-rockchip-add-support-for-NanoPi-R4S.patch
