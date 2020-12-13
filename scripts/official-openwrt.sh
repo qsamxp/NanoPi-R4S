@@ -154,20 +154,14 @@ sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 pushd feeds/packages/lang
 rm -rf golang
 svn co https://github.com/coolsnowwolf/packages/trunk/lang/golang
-pwd
-d
 popd
 
 # Convert Translation
-pwd
-ls -la .
-ls -la ../
-ls -la ../../
-cp ../scripts/convert-translation.sh .
+cp ../../scripts/convert-translation.sh .
 chmod +x ./convert-translation.sh
 ./convert-translation.sh || true
 
 # Remove upx
-cp ../scripts/remove-upx.sh .
+cp ../../scripts/remove-upx.sh .
 chmod +x ./remove-upx.sh
 ./remove-upx.sh || true
