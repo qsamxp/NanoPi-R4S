@@ -53,10 +53,10 @@ jobs:
         run: |
           chmod +x scripts/*.sh
           cd code/friendlywrt
-          ../scripts/official-openwrt.sh
-          ../scripts/preset-clash-core.sh armv8
-          ../scripts/preset-terminal-tools.sh
-          ../scripts/create-acl.sh -a
+          ../../scripts/official-openwrt.sh
+          ../../scripts/preset-clash-core.sh armv8
+          ../../scripts/preset-terminal-tools.sh
+          ../../scripts/create-acl.sh -a
 
       - name: Update Feeds		
         run: |		
