@@ -30,7 +30,6 @@ jobs:
           sudo apt-get -y purge dotnet* ghc* google* llvm* mysql* php* zulu* firefox hhvm
           sudo apt-get -y autoremove --purge
           sudo apt-get -y install upx-ucl unzip
-          sudo apt-get -y install lua5.3 liblua5.3-0 liblua5.3-dev
           wget -O - https://raw.githubusercontent.com/friendlyarm/build-env-on-ubuntu-bionic/master/install.sh | bash
 
       # - name: Start SSH via tmate
